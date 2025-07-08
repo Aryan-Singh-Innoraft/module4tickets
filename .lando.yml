@@ -1,0 +1,4 @@
+name: mod4practice
+recipe: drupal10
+config:
+  webroot: web
