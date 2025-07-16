@@ -1,0 +1,9 @@
+welcome_user.welcuser:    # Machine name of the route.
+  path: '/welcome-user'   # The Url path users will visit.
+  defaults:
+    _controller: '\Drupal\welcome_user\Controller\WelcomeUserController::hellouser'
+    # Specifies the controller and method to call when this route is accessed.
+    _title: Welcome!!        # Page title.
+  requirements:
+    _permission: 'welcome user custom module'  # Permission required to access this route. 
+
