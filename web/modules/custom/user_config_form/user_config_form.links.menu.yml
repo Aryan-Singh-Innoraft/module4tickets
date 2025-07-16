@@ -1,0 +1,6 @@
+user_config_form.settings:
+  title: 'User Config Form'
+  description: 'Configure user details like name, email, phone.'
+  parent: system.admin_config_system
+  route_name: user_config_form.settings
+  weight: 100
