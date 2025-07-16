@@ -1,0 +1,5 @@
+name: User Details Custom Form
+type: module
+description: 'A custom form for taking user details.'
+version: 1.0
+core_version_requirement: ^9 || ^10

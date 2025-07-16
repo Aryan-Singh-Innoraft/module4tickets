@@ -1,0 +1,7 @@
+user_details_form.user:
+  path: '/get-user-details'
+  defaults:
+    _form: '\Drupal\user_details_form\Form\CustomUserDetailsForm'
+    _title: User Details Form
+  requirements:
+    _permission: 'user details custom form permission'
