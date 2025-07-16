@@ -20,7 +20,9 @@ class WelcomeUserController extends ControllerBase {
 
     return[
       '#markup' => $this->t('Hello @name' , ['@name' => $username]),
-      '#cache' => ['max-age' => 0,],
+      '#cache' => [
+        'contexts' => ['user'],
+      ],
     ];
   }
 }
