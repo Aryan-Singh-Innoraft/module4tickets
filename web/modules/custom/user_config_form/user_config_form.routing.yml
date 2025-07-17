@@ -5,4 +5,4 @@ user_config_form.settings:
     _title: 'User Config Form'
   requirements: 
     # _permission: 'administer site configuration'
-    _role: administrator + anonymous
+    _role: administrator
