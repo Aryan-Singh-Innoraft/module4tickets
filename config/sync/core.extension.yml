@@ -48,6 +48,7 @@ module:
   user: 0
   views_ui: 0
   welcome_block: 0
+  welcome_user: 0
   views: 10
   standard: 1000
 theme:
