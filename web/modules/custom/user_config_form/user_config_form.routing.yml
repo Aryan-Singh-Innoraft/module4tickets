@@ -1,0 +1,8 @@
+user_config_form.settings:
+  path: '/admin/config/user-config-form'
+  defaults: 
+    _form: '\Drupal\user_config_form\Form\UserConfigForm'
+    _title: 'User Config Form'
+  requirements: 
+    # _permission: 'administer site configuration'
+    _role: administrator

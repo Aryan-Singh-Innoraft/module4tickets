@@ -1,0 +1,5 @@
+name: 'User config form'
+type: module
+description: 'A custom module for config form'
+package: Custom
+core_version_requirement: ^10 || ^11
