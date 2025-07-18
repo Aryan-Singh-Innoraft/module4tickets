@@ -6,4 +6,3 @@ welcome_user.welcuser:    # Machine name of the route.
     _title: Welcome!!        # Page title.
   requirements:
     _permission: 'welcome user custom module'  # Permission required to access this route. 
-
