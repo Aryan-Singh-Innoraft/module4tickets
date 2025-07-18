@@ -1,0 +1,4 @@
+services: 
+  welcome_user.my_service:
+    class: Drupal\welcome_user\Service\CurrentUserService
+    arguments: ['@current_user']
