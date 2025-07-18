@@ -1,0 +1,5 @@
+name: 'welcome_block'
+type: module
+description: 'A custom block for greeting user.'
+package: Custom
+core_version_requirement: ^10 || ^11
