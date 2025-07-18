@@ -1,0 +1,7 @@
+welcome_user.welcuser:    
+  path: '/welcome-user' 
+  defaults:
+    _controller: '\Drupal\welcome_user\Controller\WelcomeUserController::hellouser'
+    _title: Welcome!! 
+  requirements:
+    _permission: 'access content'   
