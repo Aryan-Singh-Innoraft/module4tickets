@@ -1,8 +1,8 @@
-name: Welcomeee user service  # This is my custom module name.
-type: module          # Declares this as a module (not a theme or profile)
-description: 'A custom module for welcoming user.'     # Short description of what the module does.
-package: custom       # The group under which this module appears in the extend page.
-version: 1.0          # Version number of your module.
-core_version_requirement: ^9 || ^10     # Defines which Drupal core versions this module supports.  
-dependencies:         # Lists dependencies
+name: Welcomes user page
+type: module         
+description: 'A custom module for showing welcome user page.'    
+package: custom       
+version: 1.0          
+core_version_requirement: ^9 || ^10      
+dependencies:        
   - drupal:system
