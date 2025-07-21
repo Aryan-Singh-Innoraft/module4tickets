@@ -54,4 +54,3 @@ class WelcomeUserController extends ControllerBase {
     ];
   }
 }
-

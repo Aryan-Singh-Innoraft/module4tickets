@@ -36,3 +36,4 @@ class CurrentUserService {
     return $this->currentUser->getDisplayName();
   }
 }
+
