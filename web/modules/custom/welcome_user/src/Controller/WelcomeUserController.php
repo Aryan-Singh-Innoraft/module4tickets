@@ -5,6 +5,8 @@ use Drupal\Core\Controller\ControllerBase;
 
 /**
  * The controller that greets user.
+ * It uses the Drupal core service to get currentUser.
+ * Uses currentUser object to get the displayName.
  */
 class WelcomeUserController extends ControllerBase {
 
