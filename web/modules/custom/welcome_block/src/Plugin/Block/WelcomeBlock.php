@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @file 
+ * A block plugin made extending the BlockBase class.
+ * This block has welcome statement with the user role mentioned as well.
+ */
+
 namespace Drupal\welcome_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -23,7 +29,7 @@ class WelcomeBlock extends BlockBase implements ContainerFactoryPluginInterface 
    *
    * @var \Drupal\Core\Session\AccountInterface
    */
-  protected $current_user;
+  protected $currentUser;
 
   /**
    * Constructs a new WelcomeBlock instance.
@@ -40,7 +46,7 @@ class WelcomeBlock extends BlockBase implements ContainerFactoryPluginInterface 
   public function __construct (array $configuration , $plugin_id, $plugin_definition, AccountInterface $current_user) {
     parent::__construct($configuration, 
     $plugin_id , $plugin_definition);
-    $this->current_user = $current_user;
+    $this->currentUser = $current_user;
   }
   
   /**
@@ -59,8 +65,8 @@ class WelcomeBlock extends BlockBase implements ContainerFactoryPluginInterface 
    * {@inheritdoc}
    */
   public function build() {
-    $roles = $this->current_user->getRoles();
-    $formatted_roles = [];
+    $roles = $this->currentUser->getRoles();
+    $formatted_role = [];
     if (!empty($roles)) {
       foreach ($roles as $role) {
         $formatted_role[] = ucfirst(str_replace('_' , ' ', $role));

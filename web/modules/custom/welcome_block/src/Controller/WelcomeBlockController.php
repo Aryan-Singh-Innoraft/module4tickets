@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * @file
+ * Uses the core service to get the username and welcome the user.
+ */
+
 namespace Drupal\welcome_block\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
@@ -7,16 +13,11 @@ use Drupal\Core\Controller\ControllerBase;
  * Returns responses for Welcome block routes.
  */
 class WelcomeBlockController extends ControllerBase {
-
   /**
    * Builds the response.
    */
   public function welcome() {
-
     $block = \Drupal::service('plugin.manager.block')->createInstance('welcome_block_plugin_welcome' , []);
-
-    return $block->build();
-    
+    return $block->build();   
   }
-
 }
