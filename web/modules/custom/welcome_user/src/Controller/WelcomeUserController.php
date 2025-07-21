@@ -1,4 +1,5 @@
 <?php 
+
 namespace Drupal\welcome_user\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
@@ -7,6 +8,8 @@ use Drupal\welcome_user\Service\CurrentUserService;
 
 /**
  * The controller that provides a user welcome page.
+ * Using a service here to get the username.
+ * Fetches the username and displays it.
  */
 class WelcomeUserController extends ControllerBase {
 
@@ -51,4 +54,4 @@ class WelcomeUserController extends ControllerBase {
     ];
   }
 }
-?>
+
