@@ -1,0 +1,7 @@
+rgb_color_field.custom_color_field:
+  path: '/rgb-color-field'
+  defaults:
+    _title: 'RGB Field'
+    _controller: '\Drupal\welcome_block\Controller\RGBColorFieldController'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+name: 'RGB color field'
+type: module
+description: 'A module that provides a custom rgb_color_field'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies: 
+  - field
