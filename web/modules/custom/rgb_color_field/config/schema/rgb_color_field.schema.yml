@@ -1,7 +1,0 @@
-field.value.rgb_color_field_rgb_color:
-  type: mapping
-  label: Default value
-  mapping:
-    value:
-      type: label
-      label: Value
