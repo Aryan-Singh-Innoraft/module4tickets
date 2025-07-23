@@ -7,8 +7,7 @@ use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Defines a field widget that provides a textfield for the user to add
- * the hexcode for color.
+ * A field widget that provides a textfield for the user to add hexcode.
  *
  * @FieldWidget(
  *   id = "hex_value",
@@ -34,4 +33,5 @@ class HexValueWidget extends WidgetBase {
     ];
     return $element;
   }
+
 }

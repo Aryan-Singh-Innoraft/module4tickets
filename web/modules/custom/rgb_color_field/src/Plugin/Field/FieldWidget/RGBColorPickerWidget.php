@@ -7,8 +7,7 @@ use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Defines a field widget that provides a color picker for the user to pick
- * colors in the field.
+ * A field widget that provides a color picker for the user to pick colors.
  *
  * @FieldWidget(
  *   id = "rgb_color_picker_widget",
@@ -31,4 +30,5 @@ class RGBColorPickerWidget extends WidgetBase {
     ];
     return $element;
   }
+
 }
