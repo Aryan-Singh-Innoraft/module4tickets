@@ -20,7 +20,7 @@ function rgb_color_field_entity_field_access(string $operation, FieldDefinitionI
   if ($field_definition->getType() !== 'rgb_color') {
     return AccessResult::neutral();
   }
-  if ($account->hasPermission('rgb_color_field_permission')) {
+  if ($account->hasPermission('rgb_color_field_permission') && in_array('administrator', $account->getRoles())) {
     return AccessResult::allowed();
   }
   return AccessResult::forbidden();
