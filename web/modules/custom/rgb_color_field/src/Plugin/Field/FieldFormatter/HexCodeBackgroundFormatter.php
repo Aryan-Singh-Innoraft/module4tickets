@@ -6,8 +6,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 
 /**
- * Plugin formatter that displays a static hex code with the same 
- * background color.
+ * Plugin formatter that displays a static hex code with same background color.
  *
  * @FieldFormatter(
  *   id = "hex_code_background_formatter",
@@ -32,4 +31,5 @@ class HexCodeBackgroundFormatter extends FormatterBase {
     }
     return $element;
   }
+
 }

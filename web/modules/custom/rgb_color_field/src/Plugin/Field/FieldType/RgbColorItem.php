@@ -46,9 +46,10 @@ class RgbColorItem extends FieldItemBase {
         'value' => [
           'type' => 'varchar',
           'title' => 'Enter your color',
-          'length' => 7
-        ]
-      ]
+          'length' => 7,
+        ],
+      ],
     ];
   }
+
 }

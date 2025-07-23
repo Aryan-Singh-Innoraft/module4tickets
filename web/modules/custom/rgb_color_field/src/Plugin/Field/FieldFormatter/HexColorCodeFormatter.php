@@ -6,16 +6,16 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 
 /**
- * Plugin formatter that displays a static hex code with the same 
- * text color.
+ * Plugin formatter that displays a static hex code with the same text color.
  *
  * @FieldFormatter(
  *   id = "rgb_hex_code_formatter",
  *   label = @Translation("Hex Color Code"),
  *   field_types = {"rgb_color"},
  * )
- */  
+ */
 final class HexColorCodeFormatter extends FormatterBase {
+
   /**
    * {@inheritdoc}
    */
@@ -31,4 +31,5 @@ final class HexColorCodeFormatter extends FormatterBase {
     }
     return $element;
   }
+
 }
