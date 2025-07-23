@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Uses a hook to check whether a user has permission to access the field.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Field\FieldDefinitionInterface;
+
+/**
+ * Implements hook_entity_field_access() for controlling field access.
+ *
+ * Checks whether the user has the permission to acccess the field or not,
+ * basically the user has a specific ('rgb_color_field_permission')
+ * permission or not and returns a result based on that.
+ */
+function rgb_color_field_entity_field_access(string $operation, FieldDefinitionInterface $field_definition, AccountInterface $account) {
+  if ($field_definition->getType() !== 'rgb_color') {
+    return AccessResult::neutral();
+  }
+  if ($account->hasPermission('rgb_color_field_permission') && in_array('administrator', $account->getRoles())) {
+    return AccessResult::allowed();
+  }
+  return AccessResult::forbidden();
+}
