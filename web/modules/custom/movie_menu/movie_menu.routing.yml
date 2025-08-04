@@ -1,0 +1,7 @@
+movie_menu.budget_friendly_movie_amount:
+  path: '/admin/reports/movie-budget'
+  defaults:
+    _title: 'Budget friendly movie amount'
+    _form: 'Drupal\movie_menu\Form\BudgetFriendlyMovieAmount'
+  requirements:
+    _permission: 'administer_budget_friendly_movie_amount'

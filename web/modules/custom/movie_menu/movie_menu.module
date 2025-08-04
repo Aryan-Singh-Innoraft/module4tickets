@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Has implementation of node view hook for movie_menu module.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements node view hook to alter movie budget message on node view.
+ *
+ * Compares the movie price with the budget-friendly-movie amount.
+ */
+function movie_menu_node_view(array &$build, NodeInterface $node, $view_mode, $langcode) {
+  if ($node->getType() == 'movie') {
+    $config = \Drupal::config('movie_menu.settings');
+    $budget_amount = $config->get('budget_friendly_amount');
+    $movie_amount = $node->get('field_movie_price')->value;
+
+    $budget_amount = (float) $budget_amount;
+    $movie_amount = (float) $movie_amount;
+    if ($budget_amount > $movie_amount) {
+      $message = t("The movie is under budget.");
+    }
+    elseif ($budget_amount < $movie_amount) {
+      $message = t("The movie is over budget.");
+    }
+    else {
+      $message = t("The movie is within budget.");
+    }
+
+    $build['budget_message'] = [
+      '#markup' => '<div>Movie budget:' . $message . '</div>',
+      '#weight' => -10,
+    ];
+  }
+}

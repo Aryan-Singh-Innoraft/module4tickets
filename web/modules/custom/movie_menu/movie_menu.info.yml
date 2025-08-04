@@ -1,0 +1,5 @@
+name: 'Movie menu'
+type: module
+description: 'A module that provides a config form for budget-friendly-amount of movies, with menu.'
+package: Custom
+core_version_requirement: ^10 || ^11
