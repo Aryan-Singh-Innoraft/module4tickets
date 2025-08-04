@@ -1,0 +1,6 @@
+movie_menu.budget_friendly_movie_amount:
+  title: Movie budget
+  description: A menu link that links to the config form of budget friendly movie.
+  parent: system.admin
+  route_name: movie_menu.budget_friendly_movie_amount
+  weight: 6
