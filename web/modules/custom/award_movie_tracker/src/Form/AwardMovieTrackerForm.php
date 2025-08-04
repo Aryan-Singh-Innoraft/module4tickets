@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\award_movie_tracker\Entity\AwardMovieTracker;
 
 /**
- * Form that helps keep track of budget-friendly movie amount.
+ * Form that helps add a movie in awarded movies list.
  *
  * It extends EntityForm, that provides basic form-building utilities.
  */
