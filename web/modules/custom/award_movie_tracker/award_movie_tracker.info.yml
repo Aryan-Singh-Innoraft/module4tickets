@@ -1,0 +1,5 @@
+name: 'award_movie_tracker'
+type: module
+description: 'A config entity for keeping details of award winning movies.'
+package: Custom
+core_version_requirement: ^10 || ^11
