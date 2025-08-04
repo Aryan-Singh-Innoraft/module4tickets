@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config: 
+    - node.type.movie
+    - field.storage.node.field_movie_price
+id: node.movie.field_movie_price
+field_name: field_movie_price
+entity_type: node
+bundle: movie
+label: 'Movie Price'
+description: 'The price of the movie.'
+required: false
+translatable: false
+settings: {  }
+field_type: decimal

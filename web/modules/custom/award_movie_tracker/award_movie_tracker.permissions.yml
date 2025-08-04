@@ -1,0 +1,3 @@
+administer_award_movie_tracker:
+  title: 'Administer awarded movie tracker'
+  description: 'Provides access to awarded movie tracker config entity.'

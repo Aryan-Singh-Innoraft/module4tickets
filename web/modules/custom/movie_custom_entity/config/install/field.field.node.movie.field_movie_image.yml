@@ -1,0 +1,16 @@
+langcode: en
+status: en
+dependencies:
+  config: 
+    - node.type.movie
+    - field.storage.node.field_movie_image
+id: node.movie.field_movie_image
+field_name: field_movie_image
+entity_type: node
+bundle: movie
+label: Movie image
+description: 'Upload movie banner image'
+required: false
+translatable: false
+settings: { }
+field_type: image

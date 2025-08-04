@@ -1,0 +1,5 @@
+entity.award_movie_tracker.add_form:
+  route_name: 'entity.award_movie_tracker.add_form'
+  title: 'Add award movie tracker'
+  appears_on:
+    - entity.award_movie_tracker.collection

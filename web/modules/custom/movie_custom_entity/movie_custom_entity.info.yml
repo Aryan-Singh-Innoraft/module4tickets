@@ -1,0 +1,9 @@
+name: 'movie_custom_entity'
+type: module
+description: 'A module for making a custom content type movie.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - node
+  - field
+  - image

@@ -1,0 +1,13 @@
+langcode: extend
+status: true
+dependencies: 
+  enforced:
+    module:
+      - movie_custom_entity
+name: 'Movie'
+type: movie
+description: 'Content type for Movies'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

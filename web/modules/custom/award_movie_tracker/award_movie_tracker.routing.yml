@@ -1,0 +1,31 @@
+entity.award_movie_tracker.collection:
+  path: '/admin/structure/award-movie-tracker'
+  defaults:
+    _entity_list: 'award_movie_tracker'
+    _title: 'Award movie tracker configuration'
+  requirements:
+    _permission: 'administer_award_movie_tracker'
+
+entity.award_movie_tracker.add_form:
+  path: '/admin/structure/award_movie_tracker/add'
+  defaults:
+    _entity_form: 'award_movie_tracker.add'
+    _title: 'Add an award movie tracker'
+  requirements:
+    _permission: 'administer_award_movie_tracker'
+
+entity.award_movie_tracker.edit_form:
+  path: '/admin/structure/award-movie-tracker/{award_movie_tracker}'
+  defaults:
+    _entity_form: 'award_movie_tracker.edit'
+    _title: 'Edit an award movie tracker'
+  requirements:
+    _permission: 'administer_award_movie_tracker'
+
+entity.award_movie_tracker.delete_form:
+  path: '/admin/structure/award-movie-tracker/{award_movie_tracker}/delete'
+  defaults:
+    _entity_form: 'award_movie_tracker.delete'
+    _title: 'Delete an award movie tracker'
+  requirements:
+    _permission: 'administer_award_movie_tracker'
