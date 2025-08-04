@@ -42,21 +42,29 @@ class AwardMovieTracker extends ConfigEntityBase {
 
   /**
    * Unique identifier for the entity.
+   *
+   * @var string
    */
   protected string $id;
 
   /**
    * The label or title of the entity.
+   *
+   * @var string
    */
   protected string $label;
 
   /**
    * The name of the award received by a movie.
+   *
+   * @var string
    */
   protected string $award = '';
 
   /**
    * The year in which the award was received.
+   *
+   * @var int
    */
   protected int $year = 0;
 

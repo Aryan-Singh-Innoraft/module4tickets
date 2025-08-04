@@ -8,6 +8,8 @@ use Drupal\award_movie_tracker\Entity\AwardMovieTracker;
 
 /**
  * Form that helps keep track of budget-friendly movie amount.
+ *
+ * It extends EntityForm, that provides basic form-building utilities.
  */
 class AwardMovieTrackerForm extends EntityForm {
 
