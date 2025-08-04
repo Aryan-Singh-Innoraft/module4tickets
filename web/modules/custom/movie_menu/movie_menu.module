@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Primary module hooks for movie_menu module.
+ * Has implementation of node view hook for movie_menu module.
  */
 
 use Drupal\node\NodeInterface;
@@ -10,14 +10,7 @@ use Drupal\node\NodeInterface;
 /**
  * Implements node view hook to alter movie budget message on node view.
  *
- * @param array &$build
- *   A render array having node content.
- * @param \Drupal\node\NodeInterface $node
- *   The node entity being viewed.
- * @param string $view_mode
- *   The view mode the particular node.
- * @param string $langcode
- *   The current language code.
+ * Compares the movie price with the budget-friendly-movie amount.
  */
 function movie_menu_node_view(array &$build, NodeInterface $node, $view_mode, $langcode) {
   if ($node->getType() == 'movie') {
