@@ -29,6 +29,12 @@ class MovieViewEvent extends Event {
    */
   protected $node;
 
+  /**
+   * Constructs a custom event and initialzes the node with the viewed node.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The current being viewed.
+   */
   public function __construct(NodeInterface $node) {
     $this->node = $node;
   }
