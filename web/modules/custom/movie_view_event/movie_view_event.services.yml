@@ -1,0 +1,9 @@
+services:
+  movie_view_event.movie_view_dispatcher:
+    class: Drupal\movie_view_event\EventSubscriber\MovieViewDispatcher
+    arguments: ['@event_dispatcher']
+  movie_view_event.movie_view_subscriber:
+    class: Drupal\movie_view_event\EventSubscriber\MovieViewSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }

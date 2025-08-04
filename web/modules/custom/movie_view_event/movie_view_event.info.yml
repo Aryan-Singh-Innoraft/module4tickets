@@ -1,0 +1,5 @@
+name: 'Movie Budget Message'
+type: module
+description: 'Creates a custom event and subscriber for movie budget message.'
+package: Custom
+core_version_requirement: ^10

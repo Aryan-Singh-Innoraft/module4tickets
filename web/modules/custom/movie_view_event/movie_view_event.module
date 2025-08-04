@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Has an entity view hook implementation for movie_view_event module.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_view().
+ *
+ * Calls a dispatcher when a node is viewed.
+ */
+function movie_view_event_entity_view(array &$build, EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity instanceof NodeInterface && $entity->bundle() == 'movie') {
+    \Drupal::service('movie_view_event.movie_view_dispatcher')->onNodeView($entity, $build);
+  }
+}
