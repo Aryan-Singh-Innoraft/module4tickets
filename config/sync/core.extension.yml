@@ -17,6 +17,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -37,6 +38,7 @@ module:
   path_alias: 0
   search: 0
   shortcut: 0
+  smtp: 0
   system: 0
   taxonomy: 0
   text: 0

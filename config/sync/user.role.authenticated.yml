@@ -12,6 +12,7 @@ dependencies:
     - search
     - shortcut
     - system
+    - welcome_user
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
@@ -28,3 +29,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'welcome user custom module'
