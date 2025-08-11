@@ -1,0 +1,15 @@
+events_dashboard.dashboard:
+  path: 'admin/events-dashboard'
+  defaults:
+    _controller: '\Drupal\events_dashboard\Controller\EventsDashboardController::dashboard'
+    _title: 'Events Dashboard'
+  requirements:
+    _permission: 'access content'
+
+events_dashboard.taxonomy_term:
+  path: '/taxonomy-term-events'
+  defaults:
+    _title: 'Taxonomy term events'
+    _form: '\Drupal\events_dashboard\Form\TaxonomyTermForm'
+  requirements:
+    _permission: 'access content'

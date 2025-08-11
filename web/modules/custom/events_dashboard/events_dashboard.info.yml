@@ -1,0 +1,5 @@
+name: 'Events dashboard'
+type: module
+description: 'A custom module that provides a dashboard of events count.'
+package: Custom
+core_version_requirement: ^10 || ^11
